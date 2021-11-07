@@ -1,0 +1,20 @@
+doctype html
+html(lang="ru")
+    head
+        title= "Список покупок" + user.name
+        link(rel='stylesheet' href='../static/user.css')
+        link(type='text/css' rel='stylesheet' href='../jquery/jquery-ui.css')
+        script(src='../jquery/jquery-3.6.0.min.js')
+        script(src='../jquery/jquery-ui.js')
+        script(src='../jquery/user.js')
+    body
+        script(src='/socket.io/client-dist/socket.io.js')
+        script(src='../static/socket.js')
+        .container
+            a.btn(style='margin-right: 15px' href='/user/'+user.nick) Назад к аукциону
+        .painting(style='overflow: scroll')
+            each i in paintings
+                .painting2
+                    h2 Название картины: #{i.title}
+                    h3 Автор: #{i.author}
+                    h3 Год написания: #{i.year}

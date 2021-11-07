@@ -1,0 +1,89 @@
+.container{
+    display: grid;
+    grid-gap: 10px;
+}
+
+.menubar{
+    background-color: #0f9fff;
+    padding: 15px;
+}
+
+.menubar-elem{
+    font-size: 26pt;
+    text-decoration: none;
+    text-decoration-color: azure;
+    padding: 15px;
+    color: darkblue;
+}
+
+.add-btn{
+    background: #0f9fff;
+}
+
+.btn{
+    font-size: 26pt;
+    background: #0f9fff;
+    color: darkblue;
+}
+
+.btn:hover{
+    color:azure;
+    box-shadow: 0 0 5px 2px;
+}
+
+.menubar-elem:hover{
+    color:azure;
+    box-shadow: 0 0 5px 2px;
+}
+
+.painting{
+    margin-left: 1%;
+    margin-top: 15px;
+    border:10px solid #0f9fff;
+    font-family: sans-serif;
+    border-radius: 10px;
+    width: 28%;
+    padding: 30px;
+    height: 700px;
+    overflow: scroll;
+}
+
+.remove{
+    white-space: nowrap;
+}
+
+.remove-item{
+    white-space: normal;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.modal{
+    content: '';
+    font-size: 20pt;
+    position: fixed;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    padding: 30px;
+    transform: translate(-50%,-50%);
+    border:10px solid #0f9fff;
+}
+
+.x-btn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 1px;
+    top:1px;
+    background: red;
+    cursor: pointer;
+}

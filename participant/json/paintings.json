@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title":  "Золотая осень",
+    "author":  "Исак Левитан",
+    "img": "static/gold_osen.jpg",
+    "price": 150000,
+    "year": 1895,
+    "status": "В продаже",
+    "owner": "",
+    "biggest_bet": 0,
+    "potential_owner": ""
+  },
+  {
+    "id": "2",
+    "title":  "Богатыри",
+    "author":  "Виктор Васнецов",
+    "img": "static/bogatiri.jpg",
+    "price": 100000,
+    "year": 1900,
+    "status": "В продаже",
+    "owner": "",
+    "biggest_bet": 0,
+    "potential_owner": ""
+  },
+  {
+    "id": "3",
+    "title":  "Девятый вал",
+    "author":  "Иван Айвазовский",
+    "img": "static/9val.jpg",
+    "price": 99990,
+    "year": 1900,
+    "status": "В продаже",
+    "owner": "",
+    "biggest_bet": 0,
+    "potential_owner": ""
+  },
+  {
+    "id": "4",
+    "title":  "Бабушкин сад",
+    "author":  "Василий Поленов",
+    "img": "static/babka.jpg",
+    "price": 99990,
+    "year": 1878,
+    "status": "В продаже",
+    "owner": "",
+    "biggest_bet": 0,
+    "potential_owner": ""
+  },
+  {
+    "id": "5",
+    "title":  "Золотая осень",
+    "author":  "Василий Поленов",
+    "img": "static/gold_osen_2.jpg",
+    "price": 99990,
+    "year": 1893,
+    "status": "В продаже",
+    "owner": "",
+    "biggest_bet": 0,
+    "potential_owner": ""
+  }
+]

@@ -1,0 +1,71 @@
+.painting2{
+    border:4px solid #0f9fff;
+    font-family: sans-serif;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 90%;
+    padding: 30px;
+}
+
+.painting{
+    margin-left: 2%;
+    margin-top: 15px;
+    border:10px solid #0f9fff;
+    font-family: sans-serif;
+    border-radius: 10px;
+    width: 40%;
+    padding: 30px;
+    height: 700px;
+}
+
+.remove{
+    white-space: nowrap;
+}
+
+.remove-item{
+    white-space: normal;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.btn{
+    font-size: 26pt;
+    background: #0f9fff;
+    color: darkblue;
+}
+
+.btn:hover{
+    color:azure;
+    box-shadow: 0 0 5px 2px;
+}
+
+.btn:disabled{
+    color: darkblue;
+    font-size: 26pt;
+    background: gray;
+}
+
+.btn:disabled:hover{
+    color: darkblue;
+    font-size: 26pt;
+    background: gray;
+}
+
+.btn:disabled{
+    color: darkblue;
+    font-size: 26pt;
+    background: gray;
+}
+
+
+#con1{
+    border-color: #0f9fff;
+    background-color: #007fff;
+    padding: 20px;
+}
+
+#chat{
+    margin-top: 15px;
+    overflow: scroll;
+    height: 57%;
+}

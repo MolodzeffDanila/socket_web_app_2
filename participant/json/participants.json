@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Молодцев Данила",
+    "nick": "Dan_Mol",
+    "budget": "10"
+  },
+  {
+    "id": "2",
+    "name": "Роман Абрамович",
+    "nick": "ChelseaTop1",
+    "budget": "199999999990"
+  },
+  {
+    "id": "3",
+    "name": "Ryan Gosling",
+    "nick": "Drive2011",
+    "budget": "100000000"
+  },
+  {
+    "id": "4",
+    "name": "Виталий Витальев",
+    "nick": "Vitalya",
+    "budget": "1000000"
+  },
+  {
+    "id": "5",
+    "nick": "SashaGoal",
+    "name": "Александр Кержаков",
+    "budget": "1000000"
+  }
+]

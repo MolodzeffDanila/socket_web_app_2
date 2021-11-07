@@ -1,0 +1,40 @@
+doctype html
+html(lang="ru")
+    head
+        title= user.name
+        link(rel='stylesheet' href='../static/user.css')
+        link(type='text/css' rel='stylesheet' href='../jquery/jquery-ui.css')
+        script(src='../jquery/jquery-3.6.0.min.js')
+        script(src='../jquery/jquery-ui.js')
+        script(src='../jquery/user.js')
+    body
+        script(src='/socket.io/client-dist/socket.io.js')
+        script(src='../static/socket.js')
+        script.
+            var name = `#{user.name}`
+        .remove
+            .painting.remove-item
+                h2#name___ Имя участника: #{user.name}
+                h3#budget Бюджет: #{user.budget} руб.
+                div#current_lot
+                    h2#title Текущий лот: #{current_painting.title}
+                    div
+                        h2#paint_author Автор: #{current_painting.author}
+                        h3#paint_year Год написания: #{current_painting.year}
+                        h3#paint_price Минимальная цена: #{current_painting.price} руб.
+                        img#paint_src(src='../'+current_painting.img height="100px" width="auto")
+                div
+                    h3 Сделать ставку:
+                    div#slider
+                        div#myslider.ui-slider-handle
+                    br
+                    button.btn#betbtn(onclick=`make_deal("${user.name}")`) Сделать ставку
+                    br
+                div(style='margin-top:15px')
+                    a.btn(href='/bin/' + user.name ) Список покупок
+            .painting.remove-item
+                .painting2
+                    h2#time Время до конца аукциона:
+                    h2#cur_time Время до конца торгов за текущий лот:
+                    h2#pause Время до конца паузы:
+                .painting2#chat

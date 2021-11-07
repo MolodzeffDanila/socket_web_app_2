@@ -1,0 +1,44 @@
+doctype html
+html(lang="ru")
+    head
+        link(rel='stylesheet' href='static/admin.css')
+        link(type='text/css' rel='stylesheet' href='jquery/jquery-ui.css')
+        title= "Страница админа"
+        script(src='jquery/jquery-3.6.0.min.js')
+        script(src='jquery/jquery-ui.js')
+        script(src='jquery/admin.js')
+    body
+        script(src='/socket.io/client-dist/socket.io.js')
+        script(src='static/socket.js')
+        .container#con1
+            button.btn#start(style='margin-right: 15px' onclick="start_auction()") Начать аукцион
+        .remove
+            .painting.remove-item(style='overflow: scroll')
+                div#tabs
+                    ul
+                        li
+                            a(href='#tab1') Список лотов
+                        li
+                            a(href='#tab2') Список участников
+                    div#tab1
+                        each i in paintings
+                            .painting2
+                                h2 Название картины: #{i.title}
+                                h3 Автор: #{i.author}
+                                h3 Год написания: #{i.year}
+                                if(i.status === "Продана")
+                                    h3 Куплена: #{i.owner} за #{i.biggest_bet}
+                                else
+                                    h4 Минимальная цена: #{i.price} руб.
+                                    h3 Статус: #{i.status}
+                    div#tab2
+                        each i in participants
+                            .painting2
+                                h2 Имя участника: #{i.name}
+                                h3 Бюджет: #{i.budget} руб.
+            .painting.remove-item
+                .painting2
+                    h2#time Время до конца аукциона:
+                    h2#cur_time Время до конца торгов за текущий лот:
+                    h2#pause Время до конца паузы:
+                .painting2#chat

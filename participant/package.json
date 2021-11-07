@@ -1,0 +1,27 @@
+{
+  "name": "auction_paricipant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.163.0",
+    "flow-remove-types": "^2.163.0",
+    "jquerry": "0.0.1-security",
+    "mocha": "^9.1.3",
+    "pug": "^3.0.2",
+    "rollbar": "^2.24.0",
+    "socket.io": "^4.3.1",
+    "webpack": "^5.61.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.1"
+  }
+}
